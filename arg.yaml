@@ -18,9 +18,4 @@ spec:
       parameters:
       - name: message
         value: "{{quote(inputs.parameters.message)}} "      # parameter declaration
-    container:
-      # run cowsay with that message input parameter as args
-      image: docker/whalesay
-      command: [cowsay]
-      args: ["{{inputs.parameters.message}}"]
 
